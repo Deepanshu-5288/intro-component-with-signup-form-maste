@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    background-image: url(../images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+main{
+    display: flex;
+    width: 65rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+}
+.left-section{
+    width: 50%;
+}
+.right-section{
+    width: 50%;
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.right-section p{
+    margin: 0;
+
+}
+.right-section-upper{
+    background-color: hsl(248, 32%, 49%);
+    
+    padding: 1rem 0;
+    border-radius: .6rem;
+}
+.free-text{
+    font-weight: 400;
+    color: hsl(246, 25%, 77%);
+}
+.days-text{
+    font-weight: 500;
+    color: white;
+}
+.right-section-lower{
+    background-color: white;
+    border-radius: .6rem;
+    color: black;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.input-div{
+    display: flex;
+    flex-direction: column;
+    row-gap: .0625rem;
+    position: relative;
+}
+.input{
+    border-radius: .3125rem;
+    padding: 1rem;
+    border: 0.0625rem solid hsl(249, 10%, 26%) ;
+}
+.field-error{
+    display: none;
+}
+.field-error-show{
+    font-size: .6rem;
+    color: hsl(0, 100%, 74%) ;
+    text-align: right;
+    margin: 0;
+    display: block;
+}
+.error-img{
+    display: none;
+}
+.error-img-show{
+    position: absolute;
+    right: 1rem;
+    top: .8rem;
+    display: block;
+}
+.terms{
+    font-size: .6rem;
+    color: hsl(246, 25%, 77%);
+}
+.terms-red{
+    color: hsl(0, 100%, 74%) ;
+}
+
+.btn{
+    border: none;
+    border-radius: .3125rem;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    padding: 1rem;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: hsl(154, 78%, 65%);
+}
+.btn-error{
+    border: .2rem solid hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 65.625rem) and (min-width: 31.25rem) {
+    main{
+        flex-direction: column;
+        width: 30rem;
+        text-align: center;
+        row-gap: 2rem;
+    }
+    .left-section{
+        width: 100%;
+    }
+    .right-section{
+        width: 100%;
+    }
+}
+@media screen and  (max-width: 31.25rem) {
+    main{
+        flex-direction: column;
+        width: 20rem;
+        text-align: center;
+        row-gap: 2rem;
+    }
+    .left-section{
+        width: 100%;
+    }
+    .right-section{
+        width: 100%;
+    }
+}
